@@ -14,4 +14,4 @@ Mon site pro.
 
 ## License
 
-Voir [LICENSE](https://github.com/UnSeulT/unseult.net/blob/master/LICENSE)
+Voir [LICENSE](https://github.com/UnSeulT/unseult.net/blob/master/LICENSE.md)
