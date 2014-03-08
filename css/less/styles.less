@@ -1,32 +1,58 @@
 @import (reference) "_variables";
 @import (reference) "_helper";
-@import (reference) "_reset";
+@import "_reset";
 @import "_fonts";
 
 
 body{
   background-color: white;
-  font-size: 22px;
+  .font(16px);
   font-family: verdana, sans-serif;
   color: #222;
 }
 
-a{
-  text-decoration: none;
-  color: #222;
-  &:hover,
-  &:focus{
-    color: teal;
-  }
+.centerContainer(){
+  position: relative;
+}
+.absoluteCenter(){
+  .size(50%);
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .profil{
-  font-size: 80px;
-  text-align: center;
-  margin: 1em auto;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
   ul{
-    li,a {
-      display: inline-block;
+    height: 100%;
+    li {
+      float: left;
+      .size(50%);
+      position: relative;
+      &:nth-child(2),&:nth-child(3){
+        background: lightgrey;
+      }
+      a{
+        text-decoration: none;
+        color: #222;
+        &:hover,
+        &:focus{
+          color: white;
+          background: #222;
+        }
+        display: block;
+        height: 100%;
+        // .centerContainer;
+          text-align: center;
+        span{
+          .absoluteCenter;
+          font-size: 80px;
+          text-decoration: none;
+          // background: teal;
+        }
+      }
     }
   }
 }
