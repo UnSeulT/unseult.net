@@ -1,0 +1,45 @@
+/* RESET CSS by http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{margin:0; padding:0; border:0; outline:0;	font-size:100%; vertical-align:baseline; background:transparent;}
+body{line-height:1;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:''; content:none;}
+:focus{outline:0;} /* remember to define focus styles! */
+ins{text-decoration:none;} /* remember to highlight inserts somehow! */
+del{text-decoration:line-through;}
+table{border-collapse:collapse; border-spacing:0;} /* tables still need 'cellspacing="0"' in the markup */
+/* source: http://css-tricks.com/snippets/css/give-clickable-elements-a-pointer-cursor */
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {cursor: pointer;}
+
+/* Nouveau clearfix */
+/* source: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.cf:before,.cf:after{content:""; display:block;}
+.cf:after{clear:both;}
+/* For IE 6/7 (trigger hasLayout) */
+.cf{zoom:1;}
+
+/* Ancien clearfix */
+/* source: http://sonspring.com/journal/clearing-floats */
+/* .clear{clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;} */
+
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 14px; line-height: 1.231; font-family: sans-serif; color: #222; }

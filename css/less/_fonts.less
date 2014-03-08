@@ -1,0 +1,74 @@
+@import "_variables";
+@fontUrl: "@{homeUrl}fonts/";
+@fontRep: "";
+@fontFile: "";
+@url: "@{fontUrl}@{fontRep}/@{fontFile}";
+
+.font-face( @fontfile:@url, @fontFamily: @fontFamily, @fontweight:normal, @fontstyle:normal) {
+
+  font-family: "@{fontFamily}";
+  src: url("@{fontfile}.eot");
+  src: url("@{fontfile}.eot?#iefix") format("embedded-opentype"),
+       url("@{fontfile}.woff") format("woff"),
+       url("@{fontfile}.ttf") format("truetype"),
+       url("@{fontfile}.svg#@{fontFamily}") format("svg");
+  font-weight: @fontweight;
+  font-style: @fontstyle;
+
+}
+
+@charset 'UTF-8';
+
+/*---------------------------------------
+Exple :
+@font-face {
+  @fontFamily: "NomDeLaFont";
+  @fontRep: "NomDuRepertoire";
+  @fontFile: "NomduFichierSansExtension";
+  .font-face( @url );
+}
+----------------------------------------*/
+
+
+/*---------------------------------------
+  LigatureSymbols v2.11
+  http://kudakurage.com/ligature_symbols/
+  You can get Ligature Symbols for free. This Font is licensed under the SIL Open Font License for download and using.
+  http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+---------------------------------------*/
+@font-face {
+  @fontFamily: "LigatureSymbols";
+  @fontRep: "LigatureSymbols";
+  @fontFile: "LigatureSymbols-2.11";
+  .font-face( @url );
+}
+
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+  // -moz-font-feature-settings: "liga=1, dlig=1";
+  // -ms-font-feature-settings: "liga" 1, "dlig" 1;
+  // -o-font-feature-settings: "liga" 1, "dlig" 1;
+  // font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+.lsf-icon:before {
+  content: attr(title);
+  margin-right: .3em;
+  font-size: 130%;
+}
+
+// Exple en utilisant l'unicode
+// .lsf-icon.amazon:before {
+//   content: '\E007';
+// }
