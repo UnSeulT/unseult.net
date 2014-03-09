@@ -21,10 +21,27 @@ body{
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
 }
-
-.profil{
+.profils{
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
+  header{
+    .absoluteCenter;
+    .size(250px);
+    z-index: 50;
+    border-radius: 50%;
+    figure{
+      // .size(50%);
+      // width: 50%;
+      margin:0 auto;
+      img{
+        max-width: 100%;
+        height:auto;
+      }
+      figcaption{
+        .ir();
+      }
+    }
+  }
   ul{
     height: 100%;
     li {
