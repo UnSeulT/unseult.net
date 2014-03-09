@@ -12,6 +12,10 @@ Mon site pro.
 
  - version cadrillage
 
+### 0.3 (2014-03-09)
+
+ - logo au centre
+
 ## License
 
 Voir [LICENSE](https://github.com/UnSeulT/unseult.net/blob/master/LICENSE.md)
