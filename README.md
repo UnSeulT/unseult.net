@@ -4,17 +4,7 @@ Mon site pro.
 
 ## Changelog
 
-### 0.1 (2014-03-08)
-
- - Page minimaliste regroupant mes différents profils twitter, github, g+, mail
-
-### 0.2 (2014-03-08)
-
- - version cadrillage
-
-### 0.3 (2014-03-09)
-
- - logo au centre
+Voir [la page des releases](https://github.com/UnSeulT/unseult.net/releases)
 
 ## License
 
